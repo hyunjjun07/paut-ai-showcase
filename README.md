@@ -6,9 +6,20 @@ PAUT AI는 Windows용 PAUT 검사 시각화·라벨링 작업 공간입니다. �
 
 [제품 소개 페이지](https://hyunjjun07.github.io/paut-ai-showcase/) · [기술 범위와 FAQ](TECHNICAL.md) · [공개 소개 저장소](https://github.com/hyunjjun07/paut-ai-showcase)
 
-![PAUT 프로브와 빔 경로를 표현한 개념 일러스트](assets/inspection-concept.webp)
+![실제 PAUT AI 앱에서 렌더링한 연결 스캔 화면](assets/demo/scan-00.webp)
 
-**개념 일러스트입니다.** 실제 앱 화면이나 측정된 검사 결과가 아닙니다.
+**실제 앱 렌더링입니다.** 공개용 합성 데모 입력을 사용했으며 현장 검사 결과나 고객 데이터가 아닙니다.
+
+## 실제 화면으로 탐색하는 제품 시연
+
+- [연결 스캔](https://hyunjjun07.github.io/paut-ai-showcase/?scene=scan#product-tour): 선택 위치가 바뀌는 실제 A/B/C/S 장면을 확인합니다.
+- [라벨 검토](https://hyunjjun07.github.io/paut-ai-showcase/?scene=label#product-tour): 편집 전, 초안, 명시적인 저장 후 화면을 살펴봅니다.
+- [3D 탐색](https://hyunjjun07.github.io/paut-ai-showcase/?scene=volume#product-tour): 실제 렌더러가 다른 카메라 각도에서 만든 화면을 탐색합니다.
+
+스크롤에 맞춰 장면이 이어지며, 버튼과 슬라이더로 직접 선택할 수도 있습니다.
+재생을 일시정지하거나 원본 화면을 확대해서 볼 수 있습니다.
+모션 감소 설정에서는 자동 재생 없이 수동으로 탐색합니다.
+장면을 재생하는 웹 시연이며, 브라우저가 Windows 앱을 실행하거나 신호를 새로 계산하지는 않습니다.
 
 ## 하나의 신호, 연결된 시야
 
@@ -32,7 +43,7 @@ PAUT AI는 Windows용 PAUT 검사 시각화·라벨링 작업 공간입니다. �
 
 ## 이 공개 저장소에 담긴 것
 
-제품 소개 페이지, 설명용 이미지와 공개 문서만 담습니다. **앱 소스는 비공개 독점 소프트웨어로 유지되며, 앱 설치 프로그램과 AI 모델 패키지는 이 저장소에서 제공하지 않습니다.** 저장소 공개는 앱의 오픈소스 라이선스나 사용권을 뜻하지 않습니다.
+제품 소개 페이지, 실제 앱 시연 이미지와 공개 문서만 담습니다. **앱 소스는 비공개 독점 소프트웨어로 유지되며, 앱 설치 프로그램과 AI 모델 패키지는 이 저장소에서 제공하지 않습니다.** 저장소 공개는 앱의 오픈소스 라이선스나 사용권을 뜻하지 않습니다.
 
 소개 페이지는 브라우저에서 읽는 정적 페이지입니다. 검사 파일 분석과 라벨 편집은 Windows 데스크톱 앱에서 수행합니다.
 

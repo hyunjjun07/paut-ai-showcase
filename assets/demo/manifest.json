@@ -1,0 +1,385 @@
+{
+  "schemaVersion": 1,
+  "sourceVersion": "1.5.5",
+  "sourceCommit": "7f7c668a87c60fd0112616bcf6622a8282d40ef1",
+  "dataKind": "synthetic-demo",
+  "width": 1600,
+  "height": 1000,
+  "encoding": "lossless-webp",
+  "captureKind": "actual-production-WPF-and-OpenGL",
+  "hero": "scan-00.webp",
+  "sections": {
+    "scan": {
+      "frames": [
+        "scan-00.webp",
+        "scan-01.webp",
+        "scan-02.webp",
+        "scan-03.webp",
+        "scan-04.webp",
+        "scan-05.webp",
+        "scan-06.webp",
+        "scan-07.webp",
+        "scan-08.webp",
+        "scan-09.webp"
+      ],
+      "caption": "Real PAUT app rendering with synthetic demo input. Ten linked scan positions update the A/B/S views while the C-scan retains the shared position cursor.",
+      "positionIndices": [
+        22,
+        30,
+        38,
+        43,
+        46,
+        51,
+        59,
+        68,
+        74,
+        81
+      ],
+      "frameStates": [
+        {
+          "file": "scan-00.webp",
+          "positionIndex": 22,
+          "lawOrdinal": 20,
+          "state": "linked-exact"
+        },
+        {
+          "file": "scan-01.webp",
+          "positionIndex": 30,
+          "lawOrdinal": 20,
+          "state": "linked-exact"
+        },
+        {
+          "file": "scan-02.webp",
+          "positionIndex": 38,
+          "lawOrdinal": 20,
+          "state": "linked-exact"
+        },
+        {
+          "file": "scan-03.webp",
+          "positionIndex": 43,
+          "lawOrdinal": 20,
+          "state": "linked-exact"
+        },
+        {
+          "file": "scan-04.webp",
+          "positionIndex": 46,
+          "lawOrdinal": 20,
+          "state": "linked-exact"
+        },
+        {
+          "file": "scan-05.webp",
+          "positionIndex": 51,
+          "lawOrdinal": 20,
+          "state": "linked-exact"
+        },
+        {
+          "file": "scan-06.webp",
+          "positionIndex": 59,
+          "lawOrdinal": 20,
+          "state": "linked-exact"
+        },
+        {
+          "file": "scan-07.webp",
+          "positionIndex": 68,
+          "lawOrdinal": 20,
+          "state": "linked-exact"
+        },
+        {
+          "file": "scan-08.webp",
+          "positionIndex": 74,
+          "lawOrdinal": 20,
+          "state": "linked-exact"
+        },
+        {
+          "file": "scan-09.webp",
+          "positionIndex": 81,
+          "lawOrdinal": 20,
+          "state": "linked-exact"
+        }
+      ]
+    },
+    "label": {
+      "frames": [
+        "label-00.webp",
+        "label-01.webp",
+        "label-02.webp"
+      ],
+      "caption": "Real PAUT app rendering with synthetic demo input. A production peak proposal remains a draft until Add + Save writes the isolated label file; revision 1 is reopened and verified.",
+      "states": [
+        "before",
+        "draft",
+        "saved"
+      ],
+      "draftRevision": 0,
+      "savedRevision": 1,
+      "reopenedRevision": 1,
+      "frameStates": [
+        {
+          "file": "label-00.webp",
+          "state": "before",
+          "revision": 0,
+          "savedIndications": 0
+        },
+        {
+          "file": "label-01.webp",
+          "state": "draft",
+          "revision": 0,
+          "savedIndications": 0,
+          "previewVoxels": 2520
+        },
+        {
+          "file": "label-02.webp",
+          "state": "saved",
+          "revision": 1,
+          "savedIndications": 1,
+          "persistedVoxels": 2520,
+          "reopenedRevision": 1,
+          "reviewStatus": "Draft"
+        }
+      ]
+    },
+    "volume": {
+      "frames": [
+        "volume-00.webp",
+        "volume-01.webp",
+        "volume-02.webp",
+        "volume-03.webp",
+        "volume-04.webp",
+        "volume-05.webp",
+        "volume-06.webp",
+        "volume-07.webp",
+        "volume-08.webp",
+        "volume-09.webp",
+        "volume-10.webp",
+        "volume-11.webp"
+      ],
+      "caption": "Real PAUT 3D renderer with synthetic demo input. Twelve actual camera angles show the signal volume and specimen/weld geometry; these are independent GPU renders, not rotated pictures.",
+      "yawRadians": [
+        -0.8,
+        -0.27640122,
+        0.24719757,
+        0.77079636,
+        1.2943952,
+        1.8179939,
+        2.3415928,
+        2.8651917,
+        3.3887904,
+        3.912389,
+        4.4359875,
+        4.9595866
+      ],
+      "frameStates": [
+        {
+          "file": "volume-00.webp",
+          "state": "gpu-rendered",
+          "yawRadians": -0.8,
+          "pitchRadians": 0.4,
+          "representation": "Physical",
+          "signalCutoff": 0.1,
+          "labelRevision": 1
+        },
+        {
+          "file": "volume-01.webp",
+          "state": "gpu-rendered",
+          "yawRadians": -0.27640122,
+          "pitchRadians": 0.4,
+          "representation": "Physical",
+          "signalCutoff": 0.1,
+          "labelRevision": 1
+        },
+        {
+          "file": "volume-02.webp",
+          "state": "gpu-rendered",
+          "yawRadians": 0.24719757,
+          "pitchRadians": 0.4,
+          "representation": "Physical",
+          "signalCutoff": 0.1,
+          "labelRevision": 1
+        },
+        {
+          "file": "volume-03.webp",
+          "state": "gpu-rendered",
+          "yawRadians": 0.77079636,
+          "pitchRadians": 0.4,
+          "representation": "Physical",
+          "signalCutoff": 0.1,
+          "labelRevision": 1
+        },
+        {
+          "file": "volume-04.webp",
+          "state": "gpu-rendered",
+          "yawRadians": 1.2943952,
+          "pitchRadians": 0.4,
+          "representation": "Physical",
+          "signalCutoff": 0.1,
+          "labelRevision": 1
+        },
+        {
+          "file": "volume-05.webp",
+          "state": "gpu-rendered",
+          "yawRadians": 1.8179939,
+          "pitchRadians": 0.4,
+          "representation": "Physical",
+          "signalCutoff": 0.1,
+          "labelRevision": 1
+        },
+        {
+          "file": "volume-06.webp",
+          "state": "gpu-rendered",
+          "yawRadians": 2.3415928,
+          "pitchRadians": 0.4,
+          "representation": "Physical",
+          "signalCutoff": 0.1,
+          "labelRevision": 1
+        },
+        {
+          "file": "volume-07.webp",
+          "state": "gpu-rendered",
+          "yawRadians": 2.8651917,
+          "pitchRadians": 0.4,
+          "representation": "Physical",
+          "signalCutoff": 0.1,
+          "labelRevision": 1
+        },
+        {
+          "file": "volume-08.webp",
+          "state": "gpu-rendered",
+          "yawRadians": 3.3887904,
+          "pitchRadians": 0.4,
+          "representation": "Physical",
+          "signalCutoff": 0.1,
+          "labelRevision": 1
+        },
+        {
+          "file": "volume-09.webp",
+          "state": "gpu-rendered",
+          "yawRadians": 3.912389,
+          "pitchRadians": 0.4,
+          "representation": "Physical",
+          "signalCutoff": 0.1,
+          "labelRevision": 1
+        },
+        {
+          "file": "volume-10.webp",
+          "state": "gpu-rendered",
+          "yawRadians": 4.4359875,
+          "pitchRadians": 0.4,
+          "representation": "Physical",
+          "signalCutoff": 0.1,
+          "labelRevision": 1
+        },
+        {
+          "file": "volume-11.webp",
+          "state": "gpu-rendered",
+          "yawRadians": 4.9595866,
+          "pitchRadians": 0.4,
+          "representation": "Physical",
+          "signalCutoff": 0.1,
+          "labelRevision": 1
+        }
+      ]
+    }
+  },
+  "assets": {
+    "scan-00.webp": {
+      "bytes": 396440,
+      "sha256": "97545a3bd76ef90bf1d2570c3bf19a73a1c5978bdc78e420fb8e684619d7b35b"
+    },
+    "scan-01.webp": {
+      "bytes": 399856,
+      "sha256": "42d9c924452e6ec4cb88d137a884da9eba953b1bfc334174ded07179cc98abd8"
+    },
+    "scan-02.webp": {
+      "bytes": 403678,
+      "sha256": "56e9231430244d123657d5b548e719a15e6250e1a828009c2fb2a2d6e4420e57"
+    },
+    "scan-03.webp": {
+      "bytes": 401022,
+      "sha256": "b8e9f9aa9f68cf98bf8fb027915cde4afd29a7edaa71b7c6de0a1f8853f15ceb"
+    },
+    "scan-04.webp": {
+      "bytes": 406074,
+      "sha256": "cac595c227f12f7a1e8940ab2961c02f9d221e5802c504be7122211baee1e63a"
+    },
+    "scan-05.webp": {
+      "bytes": 405946,
+      "sha256": "fe76c013389510e597e65949813d045f80fca4ee69deb10c5dbdf2930ff5bfc4"
+    },
+    "scan-06.webp": {
+      "bytes": 401046,
+      "sha256": "393dc1747539f4fd19e601c18843482378e4e2dfeec8dac319c471e2b2b2a2ff"
+    },
+    "scan-07.webp": {
+      "bytes": 400684,
+      "sha256": "7170e0e09c87c462ba54920c6e5caddd55fa064ff02234642477c740ac8dfb38"
+    },
+    "scan-08.webp": {
+      "bytes": 398216,
+      "sha256": "73ce5b2af8078adb3cfd7c041f76ed78e38eb99b267e7e4a502db9a4fbbe6427"
+    },
+    "scan-09.webp": {
+      "bytes": 397740,
+      "sha256": "3d01e4380c747419144eb1ae6ccf21fbbbb68e9221208714d8d453b38f072807"
+    },
+    "label-00.webp": {
+      "bytes": 358416,
+      "sha256": "e5f9361c2c6ede66e377cf87d59f5a94567df5ea65097baed3d1fb4e9701b482"
+    },
+    "label-01.webp": {
+      "bytes": 386110,
+      "sha256": "11a63a6b6a91d5545b339ea61cbaa3e0bc85840e831663644b474be47bed7a1e"
+    },
+    "label-02.webp": {
+      "bytes": 380556,
+      "sha256": "a5efd117ef573d298b800bb992a58c29c33bdb6473669fb041cfbf6989f97427"
+    },
+    "volume-00.webp": {
+      "bytes": 182928,
+      "sha256": "b20910674be879ba5c9334f0f2ed27858bb39b29ca68ffffc52b6c3da335e5d0"
+    },
+    "volume-01.webp": {
+      "bytes": 115610,
+      "sha256": "fe07c08fdecc4d86af69fdd745b654dc5e6ad9f35f887b5be9ac60c50c20ffa6"
+    },
+    "volume-02.webp": {
+      "bytes": 115376,
+      "sha256": "0ef386546c507ac888ca589bd68ef6b6417f381ccaaf781c24fc4b2eb32628fe"
+    },
+    "volume-03.webp": {
+      "bytes": 191116,
+      "sha256": "53bb15e14d7fd7b70c065ecb23026c1f74bafbc875b895df577777a2ab3abe55"
+    },
+    "volume-04.webp": {
+      "bytes": 184028,
+      "sha256": "74f0fd92e07799813bf36eb6c83c120fa9f6c8d8f3a1dde6cb2755b9d129277a"
+    },
+    "volume-05.webp": {
+      "bytes": 171632,
+      "sha256": "a3d80664d2bc8b1766ec1763cfaef301b7238c3d4efc457573763838cbd0ab97"
+    },
+    "volume-06.webp": {
+      "bytes": 183836,
+      "sha256": "5e30962be6783c39c0d789b937d785568a16629ee6843b879e1f950bd62fa8a8"
+    },
+    "volume-07.webp": {
+      "bytes": 158304,
+      "sha256": "886f5b4781be14ba676db4e1c73e2234b5a25a7380a8c85d0758ea475f22d621"
+    },
+    "volume-08.webp": {
+      "bytes": 115800,
+      "sha256": "19215b0474a44d203f9d627c90cea74827f597412fddc0b4b48b6398a3eb7231"
+    },
+    "volume-09.webp": {
+      "bytes": 192172,
+      "sha256": "90bc43107b94702a03785c4f8c215b085fac91c42e723393b796d60bd44fb4cc"
+    },
+    "volume-10.webp": {
+      "bytes": 185230,
+      "sha256": "7e9eb85a59a89c62ad42266814e054e2902222ff91644f0fe7bec1a765ece66c"
+    },
+    "volume-11.webp": {
+      "bytes": 172094,
+      "sha256": "a98fa6ac38da1fbe6f80583fd00770b1391a617ac32b5fa98904501cd4a5e675"
+    }
+  }
+}
