@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "sourceVersion": "1.5.5",
-  "sourceCommit": "7f7c668a87c60fd0112616bcf6622a8282d40ef1",
+  "sourceVersion": "2.1.0",
+  "sourceCommit": "4a5c268c4ac1d2e374aeca9f7ffdd6ea3898c08d",
+  "theme": "Monolith Dark (theme pair also includes Monolith Light)",
   "dataKind": "synthetic-demo",
   "width": 1600,
   "height": 1000,
@@ -40,61 +41,131 @@
           "file": "scan-00.webp",
           "positionIndex": 22,
           "lawOrdinal": 20,
-          "state": "linked-exact"
+          "state": "linked-exact",
+          "readouts": {
+            "position": "23 / 96",
+            "law": "21 / 41",
+            "sample": "12.60 µs",
+            "angle": "55.0°",
+            "amplitude": "ND"
+          }
         },
         {
           "file": "scan-01.webp",
           "positionIndex": 30,
           "lawOrdinal": 20,
-          "state": "linked-exact"
+          "state": "linked-exact",
+          "readouts": {
+            "position": "31 / 96",
+            "law": "21 / 41",
+            "sample": "12.53 µs",
+            "angle": "55.0°",
+            "amplitude": "ND"
+          }
         },
         {
           "file": "scan-02.webp",
           "positionIndex": 38,
           "lawOrdinal": 20,
-          "state": "linked-exact"
+          "state": "linked-exact",
+          "readouts": {
+            "position": "39 / 96",
+            "law": "21 / 41",
+            "sample": "12.53 µs",
+            "angle": "55.0°",
+            "amplitude": "ND"
+          }
         },
         {
           "file": "scan-03.webp",
           "positionIndex": 43,
           "lawOrdinal": 20,
-          "state": "linked-exact"
+          "state": "linked-exact",
+          "readouts": {
+            "position": "44 / 96",
+            "law": "21 / 41",
+            "sample": "12.45 µs",
+            "angle": "55.0°",
+            "amplitude": "ND"
+          }
         },
         {
           "file": "scan-04.webp",
           "positionIndex": 46,
           "lawOrdinal": 20,
-          "state": "linked-exact"
+          "state": "linked-exact",
+          "readouts": {
+            "position": "47 / 96",
+            "law": "21 / 41",
+            "sample": "12.53 µs",
+            "angle": "55.0°",
+            "amplitude": "ND"
+          }
         },
         {
           "file": "scan-05.webp",
           "positionIndex": 51,
           "lawOrdinal": 20,
-          "state": "linked-exact"
+          "state": "linked-exact",
+          "readouts": {
+            "position": "52 / 96",
+            "law": "21 / 41",
+            "sample": "12.60 µs",
+            "angle": "55.0°",
+            "amplitude": "ND"
+          }
         },
         {
           "file": "scan-06.webp",
           "positionIndex": 59,
           "lawOrdinal": 20,
-          "state": "linked-exact"
+          "state": "linked-exact",
+          "readouts": {
+            "position": "60 / 96",
+            "law": "21 / 41",
+            "sample": "12.60 µs",
+            "angle": "55.0°",
+            "amplitude": "ND"
+          }
         },
         {
           "file": "scan-07.webp",
           "positionIndex": 68,
           "lawOrdinal": 20,
-          "state": "linked-exact"
+          "state": "linked-exact",
+          "readouts": {
+            "position": "69 / 96",
+            "law": "21 / 41",
+            "sample": "10.42 µs",
+            "angle": "55.0°",
+            "amplitude": "ND"
+          }
         },
         {
           "file": "scan-08.webp",
           "positionIndex": 74,
           "lawOrdinal": 20,
-          "state": "linked-exact"
+          "state": "linked-exact",
+          "readouts": {
+            "position": "75 / 96",
+            "law": "21 / 41",
+            "sample": "12.60 µs",
+            "angle": "55.0°",
+            "amplitude": "ND"
+          }
         },
         {
           "file": "scan-09.webp",
           "positionIndex": 81,
           "lawOrdinal": 20,
-          "state": "linked-exact"
+          "state": "linked-exact",
+          "readouts": {
+            "position": "82 / 96",
+            "law": "21 / 41",
+            "sample": "12.60 µs",
+            "angle": "55.0°",
+            "amplitude": "ND"
+          }
         }
       ]
     },
@@ -278,108 +349,147 @@
           "labelRevision": 1
         }
       ]
+    },
+    "themes": {
+      "frames": [
+        "theme-dark.webp",
+        "theme-light.webp"
+      ],
+      "caption": "The same saved-label scene rendered by the app in its Monolith Dark and Light palettes.",
+      "frameStates": [
+        {
+          "file": "theme-dark.webp",
+          "mode": "Dark",
+          "readouts": {
+            "position": "47 / 96",
+            "law": "8 / 41",
+            "sample": "14.10 µs",
+            "angle": "42.0°",
+            "amplitude": "ND"
+          }
+        },
+        {
+          "file": "theme-light.webp",
+          "mode": "LightHybrid",
+          "readouts": {
+            "position": "47 / 96",
+            "law": "8 / 41",
+            "sample": "14.10 µs",
+            "angle": "42.0°",
+            "amplitude": "ND"
+          }
+        }
+      ]
     }
   },
   "assets": {
     "scan-00.webp": {
-      "bytes": 396440,
-      "sha256": "97545a3bd76ef90bf1d2570c3bf19a73a1c5978bdc78e420fb8e684619d7b35b"
+      "bytes": 375612,
+      "sha256": "f8892ebdd756670a51fe90724223e93aa41d50076f18178bcc5e7b0891a13d3c"
     },
     "scan-01.webp": {
-      "bytes": 399856,
-      "sha256": "42d9c924452e6ec4cb88d137a884da9eba953b1bfc334174ded07179cc98abd8"
+      "bytes": 376620,
+      "sha256": "3f8f7f832dab175f89c82be42611ca0952a1fda89b067fe829f53991e18bd571"
     },
     "scan-02.webp": {
-      "bytes": 403678,
-      "sha256": "56e9231430244d123657d5b548e719a15e6250e1a828009c2fb2a2d6e4420e57"
+      "bytes": 379820,
+      "sha256": "d1a6d35dbb3f52ebfd50579513509f110d04f70fbe7bbe03e1d98fc2f8c0ccb0"
     },
     "scan-03.webp": {
-      "bytes": 401022,
-      "sha256": "b8e9f9aa9f68cf98bf8fb027915cde4afd29a7edaa71b7c6de0a1f8853f15ceb"
+      "bytes": 382126,
+      "sha256": "e5c932a0d7325c43bc3f980dbadf8a711e70d595ee250739be1a8a6540b03e37"
     },
     "scan-04.webp": {
-      "bytes": 406074,
-      "sha256": "cac595c227f12f7a1e8940ab2961c02f9d221e5802c504be7122211baee1e63a"
+      "bytes": 383004,
+      "sha256": "483b464a303373e640e92327e54cf5fb51c0b66becc116243652e72c3777a913"
     },
     "scan-05.webp": {
-      "bytes": 405946,
-      "sha256": "fe76c013389510e597e65949813d045f80fca4ee69deb10c5dbdf2930ff5bfc4"
+      "bytes": 380970,
+      "sha256": "699f51f2ed6a080d4dd635a32e9b85319e6ea0f290edc1062afcc06437228527"
     },
     "scan-06.webp": {
-      "bytes": 401046,
-      "sha256": "393dc1747539f4fd19e601c18843482378e4e2dfeec8dac319c471e2b2b2a2ff"
+      "bytes": 378586,
+      "sha256": "96911cf181ebe01b7440e0092efdfbc62c3d84b348fe5facb70fe0e300071945"
     },
     "scan-07.webp": {
-      "bytes": 400684,
-      "sha256": "7170e0e09c87c462ba54920c6e5caddd55fa064ff02234642477c740ac8dfb38"
+      "bytes": 378910,
+      "sha256": "5d6b08c8a16f6f0711db9f93d4dde409ceea8c471a1c5121bc3abbdcb33c923a"
     },
     "scan-08.webp": {
-      "bytes": 398216,
-      "sha256": "73ce5b2af8078adb3cfd7c041f76ed78e38eb99b267e7e4a502db9a4fbbe6427"
+      "bytes": 376932,
+      "sha256": "b7adaa79ed3f2ca1c10f73bfa7cc674b98e5c20186c4f9f511d324c6129d4165"
     },
     "scan-09.webp": {
-      "bytes": 397740,
-      "sha256": "3d01e4380c747419144eb1ae6ccf21fbbbb68e9221208714d8d453b38f072807"
+      "bytes": 374896,
+      "sha256": "52d059d8facc090d87d4ea62017e9956a0ec5abf3c279195e12bab6edb130f55"
     },
     "label-00.webp": {
-      "bytes": 358416,
-      "sha256": "e5f9361c2c6ede66e377cf87d59f5a94567df5ea65097baed3d1fb4e9701b482"
+      "bytes": 341042,
+      "sha256": "b654476c056dbd386042e65d719696b373589ec804e960ff3cc0eb5e59804c0d"
     },
     "label-01.webp": {
-      "bytes": 386110,
-      "sha256": "11a63a6b6a91d5545b339ea61cbaa3e0bc85840e831663644b474be47bed7a1e"
+      "bytes": 363864,
+      "sha256": "be05e9636c7e9e719e36c54141879693139ef63f2fd579bc06fdafbca1fa8ac5"
     },
     "label-02.webp": {
-      "bytes": 380556,
-      "sha256": "a5efd117ef573d298b800bb992a58c29c33bdb6473669fb041cfbf6989f97427"
+      "bytes": 359750,
+      "sha256": "aff08e5e0e499d1e9e0dd33bb9500eae57842fb7df83536c2c63c3838aa1f451"
     },
     "volume-00.webp": {
-      "bytes": 182928,
-      "sha256": "b20910674be879ba5c9334f0f2ed27858bb39b29ca68ffffc52b6c3da335e5d0"
+      "bytes": 242408,
+      "sha256": "82deb334488846a53296c51f3d1ac19421a76eddb6adc0220ec12151ce14cae2"
     },
     "volume-01.webp": {
-      "bytes": 115610,
-      "sha256": "fe07c08fdecc4d86af69fdd745b654dc5e6ad9f35f887b5be9ac60c50c20ffa6"
+      "bytes": 214672,
+      "sha256": "b39de6e2ef5db923ac5c11885002d61e4d9f69e6da46b41bb2018bace7d3f527"
     },
     "volume-02.webp": {
-      "bytes": 115376,
-      "sha256": "0ef386546c507ac888ca589bd68ef6b6417f381ccaaf781c24fc4b2eb32628fe"
+      "bytes": 218026,
+      "sha256": "313d845a99020c9659c2ec54a290cc69f776c2be9e23466567d6c174f84c113c"
     },
     "volume-03.webp": {
-      "bytes": 191116,
-      "sha256": "53bb15e14d7fd7b70c065ecb23026c1f74bafbc875b895df577777a2ab3abe55"
+      "bytes": 263354,
+      "sha256": "36f489f9783ca8d55798b328764fa7f3bdc83981c2004d2c90db514f7296ed1a"
     },
     "volume-04.webp": {
-      "bytes": 184028,
-      "sha256": "74f0fd92e07799813bf36eb6c83c120fa9f6c8d8f3a1dde6cb2755b9d129277a"
+      "bytes": 235816,
+      "sha256": "3ceb6543275a92f14d58acf1097c829685a93b29c8cdfd0a45c38cdcb15d2a37"
     },
     "volume-05.webp": {
-      "bytes": 171632,
-      "sha256": "a3d80664d2bc8b1766ec1763cfaef301b7238c3d4efc457573763838cbd0ab97"
+      "bytes": 212466,
+      "sha256": "67982423798d71716bb7caac45ee2ae57a494ac25e4861043a7788cefd89b325"
     },
     "volume-06.webp": {
-      "bytes": 183836,
-      "sha256": "5e30962be6783c39c0d789b937d785568a16629ee6843b879e1f950bd62fa8a8"
+      "bytes": 242286,
+      "sha256": "2ccfdd33b2625e5cd3ce1490b5597b2c85d995d96f5ae683fe3ca67ece5cd0dc"
     },
     "volume-07.webp": {
-      "bytes": 158304,
-      "sha256": "886f5b4781be14ba676db4e1c73e2234b5a25a7380a8c85d0758ea475f22d621"
+      "bytes": 222972,
+      "sha256": "d352aa18924f745c37651a119ee91cb8918d6dc78a565e14fb023a6d05a739e1"
     },
     "volume-08.webp": {
-      "bytes": 115800,
-      "sha256": "19215b0474a44d203f9d627c90cea74827f597412fddc0b4b48b6398a3eb7231"
+      "bytes": 214456,
+      "sha256": "fe2512b5a715fb020b484f924f24861c91b57ff695399b701f48dbe82097bda5"
     },
     "volume-09.webp": {
-      "bytes": 192172,
-      "sha256": "90bc43107b94702a03785c4f8c215b085fac91c42e723393b796d60bd44fb4cc"
+      "bytes": 266960,
+      "sha256": "9864ddf746cb2f6b41ee31b467d6753d3d713c769ff870e57a51192db17e5144"
     },
     "volume-10.webp": {
-      "bytes": 185230,
-      "sha256": "7e9eb85a59a89c62ad42266814e054e2902222ff91644f0fe7bec1a765ece66c"
+      "bytes": 237152,
+      "sha256": "c9d441ddb65366e828b0f39e90d6efff4e814e0aacca22919169f03a9b9f14ec"
     },
     "volume-11.webp": {
-      "bytes": 172094,
-      "sha256": "a98fa6ac38da1fbe6f80583fd00770b1391a617ac32b5fa98904501cd4a5e675"
+      "bytes": 212018,
+      "sha256": "c9ea7472d5ba1cccd3e878b708fc511c64642ed8efc4041920feec6d81d4c2f0"
+    },
+    "theme-dark.webp": {
+      "bytes": 362326,
+      "sha256": "c57a8b65e542a062ec3abde13aeddbf346c54fb0e067d36c2524d13b729c92de"
+    },
+    "theme-light.webp": {
+      "bytes": 360224,
+      "sha256": "69cc7c5ae3726a181b7c8ea6b7f671deaa9b223f22332c5956593f3ed22d8eb3"
     }
   }
 }

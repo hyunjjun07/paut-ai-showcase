@@ -18,6 +18,8 @@ const detailOpen = document.querySelector("#detail-open");
 const sceneButtons = [...document.querySelectorAll("[data-scene]")].filter(element => element.tagName === "BUTTON");
 const chapters = [...document.querySelectorAll("[data-chapter]")];
 const sceneNames = { scan: "연결 스캔", label: "라벨 검토", volume: "3D 탐색" };
+const readoutFields = ["#read-position", "#read-law", "#read-sample", "#read-angle"].map(selector => document.querySelector(selector));
+const header = document.querySelector(".site-header");
 const frameCache = new Map();
 const assetUrl = file => `assets/demo/${file}`;
 let scene = "scan";
@@ -127,6 +129,13 @@ function syncStory() {
   if (nearest.dataset.chapter !== scene) selectScene(nearest.dataset.chapter);
 }
 
+// The readout row shows the instrument-bar text the app displayed for the frame on screen.
+function setReadouts(index) {
+  const values = media.sections.scan.readouts?.[index];
+  if (!values) return;
+  readoutFields.forEach((field, column) => { if (field) field.textContent = values[column]; });
+}
+
 async function advanceHero() {
   heroLoading = true;
   const frames = media.sections.scan.frames;
@@ -138,6 +147,7 @@ async function advanceHero() {
     heroImage.width = image.naturalWidth;
     heroImage.height = image.naturalHeight;
     heroFrame = next;
+    setReadouts(next);
   } catch {
     heroPlayRequested = false;
     reflectPlayback();
@@ -227,7 +237,7 @@ if (media) {
     await new Promise(requestAnimationFrame);
     if (!detail.open) return;
     const viewport = document.querySelector(".detail-scroll");
-    const focus = scene === "label" ? .9 : scene === "scan" ? .81 : .4;
+    const focus = scene === "label" ? .89 : scene === "scan" ? .83 : .4;
     viewport.scrollLeft = Math.max(0, viewport.scrollWidth * focus - viewport.clientWidth / 2);
     viewport.scrollTop = 0;
   });
@@ -253,6 +263,13 @@ if (media) {
       reflectPlayback();
     }
   });
+  setReadouts(0);
   reflectPlayback();
   startClock();
+}
+
+if (header) {
+  const marker = () => header.classList.toggle("is-scrolled", window.scrollY > 8);
+  window.addEventListener("scroll", marker, { passive: true });
+  marker();
 }

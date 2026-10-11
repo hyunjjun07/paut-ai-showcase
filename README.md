@@ -2,24 +2,32 @@
 
 ## 신호를 읽고, 판단의 근거를 남기다.
 
-PAUT AI는 Windows용 PAUT 검사 시각화·라벨링 작업 공간입니다. 연결된 스캔으로 신호의 맥락을 살피고, 원본 취득 위치를 기준으로 라벨을 검토하고 저장합니다. 최종 판단은 검사자에게 남습니다.
+PAUT AI는 Windows용 PAUT 검사 시각화·라벨링 작업 공간입니다. 연결된 스캔으로 신호의 맥락을 살피고, 원본 취득 위치를 기준으로 라벨을 검토하고 저장합니다.
 
 [제품 소개 페이지](https://hyunjjun07.github.io/paut-ai-showcase/) · [기술 범위와 FAQ](TECHNICAL.md) · [공개 소개 저장소](https://github.com/hyunjjun07/paut-ai-showcase)
 
-![실제 PAUT AI 앱에서 렌더링한 연결 스캔 화면](assets/demo/scan-00.webp)
+![PAUT AI 2.1.0 실제 앱에서 렌더링한 연결 스캔 화면](assets/demo/scan-00.webp)
 
-**실제 앱 렌더링입니다.** 공개용 합성 데모 입력을 사용했으며 현장 검사 결과나 고객 데이터가 아닙니다.
+**PAUT AI 2.1.0 실제 앱 렌더링입니다.** 공개용 합성 데모 입력을 사용했으며 현장 검사 결과나 고객 데이터가 아닙니다. 렌더링 기준은 앱 태그 `v2.1.0`(`4a5c268`)입니다.
 
 ## 실제 화면으로 탐색하는 제품 시연
 
-- [연결 스캔](https://hyunjjun07.github.io/paut-ai-showcase/?scene=scan#product-tour): 선택 위치가 바뀌는 실제 A/B/C/S 장면을 확인합니다.
-- [라벨 검토](https://hyunjjun07.github.io/paut-ai-showcase/?scene=label#product-tour): 편집 전, 초안, 명시적인 저장 후 화면을 살펴봅니다.
+- [연결 스캔](https://hyunjjun07.github.io/paut-ai-showcase/?scene=scan#product-tour): 선택 위치가 바뀌는 실제 A/B/C/S 장면과, 그때 앱 계기줄이 표시한 판독값을 함께 봅니다.
+- [라벨 검토](https://hyunjjun07.github.io/paut-ai-showcase/?scene=label#product-tour): 편집 전, 초안, 라벨 추가·저장 후 화면을 살펴봅니다.
 - [3D 탐색](https://hyunjjun07.github.io/paut-ai-showcase/?scene=volume#product-tour): 실제 렌더러가 다른 카메라 각도에서 만든 화면을 탐색합니다.
 
 스크롤에 맞춰 장면이 이어지며, 버튼과 슬라이더로 직접 선택할 수도 있습니다.
 재생을 일시정지하거나 원본 화면을 확대해서 볼 수 있습니다.
 모션 감소 설정에서는 자동 재생 없이 수동으로 탐색합니다.
 장면을 재생하는 웹 시연이며, 브라우저가 Windows 앱을 실행하거나 신호를 새로 계산하지는 않습니다.
+
+## 2.x 작업 화면
+
+- **계기줄.** 맨 위에 위치·법선·시간·각도·진폭을 큰 숫자로 보여 줍니다. 좁은 창에서도 판독값을 잃지 않습니다.
+- **하단 독.** 분석·라벨·검수·데이터셋·AI 모드, 배치 프리셋, 컬러맵, Gain, Light/Dark를 한곳에서 바꿉니다.
+- **스캔 타일.** 타일마다 축 단위(깊이, 음파 경로, 시간, 샘플)와 C-scan 게이트 방식을 고릅니다.
+- **작업 상태.** 계기줄에 저장 대기·저장됨·전환 중 같은 상태가 표시됩니다.
+- **Light와 Dark.** 같은 작업 공간을 두 테마로 씁니다. 움직임은 짧고, 모션 감소 설정에서는 바로 최종 상태로 바뀝니다.
 
 ## 하나의 신호, 연결된 시야
 
@@ -32,7 +40,7 @@ PAUT AI는 Windows용 PAUT 검사 시각화·라벨링 작업 공간입니다. �
 
 1. 검사 파일을 열고 연결할 라벨 파일을 새로 만들거나 엽니다.
 2. 한 검사 파일에 속한 여러 라벨을 목록으로 확인하고, 각 라벨의 신호 위치로 이동합니다.
-3. 초안을 검토한 뒤 **라벨 추가·저장** 또는 **변경 저장**으로 반영합니다.
+3. 신호를 더블클릭해 만든 초안을 검토한 뒤 **라벨 추가·저장** 또는 **변경 저장**으로 반영합니다.
 4. 파일별 작업목록과 파일 내 라벨 이동으로 다음 검수 대상을 정리합니다.
 
 신호를 탐색하는 것과 라벨을 확정하는 것은 별개의 단계입니다. AI 후보도 검사자의 확인을 거쳐야 합니다.
@@ -61,4 +69,4 @@ python -m http.server 8000 --bind 127.0.0.1
 
 ## English summary
 
-PAUT AI is a Windows desktop workspace for linked PAUT scan review and human-controlled labeling. Optional research AI assistance needs separate model and runtime setup; its candidates aren't final inspection decisions. This repository contains presentation assets only, not the proprietary application, an installer, or AI model packages.
+PAUT AI is a Windows desktop workspace for linked PAUT scan review and human-controlled labeling. The screens shown are real renders of app version 2.1.0 with synthetic demo input. Optional research AI assistance needs separate model and runtime setup; its candidates aren't final inspection decisions. This repository contains presentation assets only, not the proprietary application, an installer, or AI model packages.

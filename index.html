@@ -3,66 +3,86 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101820">
-  <title>PAUT AI | 실제 화면으로 이어지는 판독의 흐름</title>
-  <meta name="description" content="연결된 A/B/C/S 스캔부터 라벨 검토와 3D 탐색까지. 실제 PAUT AI 앱이 렌더링한 데모 화면으로 판독의 흐름을 만나보세요.">
+  <meta name="theme-color" content="#ffffff">
+  <title>PAUT AI | 신호를 읽고, 판단의 근거를 남기다</title>
+  <meta name="description" content="연결된 A/B/C/S 스캔, 라벨 추가·저장, 3D 탐색. PAUT AI 2.1.0 실제 앱이 합성 데모 입력으로 렌더링한 화면으로 판독의 흐름을 살펴보세요.">
   <link rel="canonical" href="https://hyunjjun07.github.io/paut-ai-showcase/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ko_KR">
   <meta property="og:site_name" content="PAUT AI">
   <meta property="og:title" content="신호를 읽고, 판단의 근거를 남기다.">
-  <meta property="og:description" content="실제 앱 화면으로 보는 연결 스캔, 라벨 검토와 3D 탐색. 합성 데모 입력을 사용한 제품 시연.">
+  <meta property="og:description" content="PAUT AI 2.1.0 실제 앱 화면으로 보는 연결 스캔, 라벨 검토와 3D 탐색. 합성 데모 입력을 사용한 제품 시연.">
   <meta property="og:url" content="https://hyunjjun07.github.io/paut-ai-showcase/">
   <meta property="og:image" content="https://hyunjjun07.github.io/paut-ai-showcase/assets/demo/scan-00.webp">
-  <meta property="og:image:alt" content="합성 데모 입력을 실제 PAUT AI 앱에서 렌더링한 연결 스캔 화면">
+  <meta property="og:image:alt" content="합성 데모 입력을 PAUT AI 2.1.0 앱에서 렌더링한 연결 스캔 화면">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="styles.css">
   <script src="demo-media.js" defer></script>
   <script src="app.js" defer></script>
 </head>
 <body>
+  <!-- avoid-ai-design-ignore: K7 — focus is styled globally by :focus-visible in styles.css (3px accent outline, verified in browser). -->
   <a class="skip-link" href="#main">본문으로 건너뛰기</a>
-  <header class="site-header wrap">
-    <a class="wordmark" href="./" translate="no" aria-label="PAUT AI 처음으로">
-      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 25 16 5l12 20M10 25l6-10 6 10M4 25h24"/></svg>PAUT AI
-    </a>
-    <nav aria-label="주요 메뉴">
-      <a href="#product-tour">제품 시연</a>
-      <a href="#technical">기술 정보</a>
-    </nav>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="wordmark" href="./" translate="no" aria-label="PAUT AI 처음으로">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 26 16 6l10 20"/><path d="M11 26a5 5 0 0 1 10 0"/></svg>PAUT AI
+      </a>
+      <nav aria-label="주요 메뉴">
+        <a href="#product-tour">제품 시연</a>
+        <a href="#principles">작업 원칙</a>
+        <a href="#faq">자주 묻는 질문</a>
+      </nav>
+      <span class="version-pill" title="이 소개의 기준이 된 앱 버전">v2.1.0</span>
+    </div>
   </header>
+
   <main id="main">
-    <section class="hero wrap" aria-labelledby="hero-title">
-      <div class="hero-heading">
-        <p class="eyebrow">판독의 흐름을, 실제 화면으로.</p>
+    <!-- Signature band: flat geometric composition drawn from phased-array vocabulary
+         (sector fans, wavefront arcs, element discs). Decorative only. -->
+    <div class="signal-band" aria-hidden="true">
+      <svg class="signal-art" viewBox="0 0 1440 400" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <g class="shape s1"><path class="fill-paper" d="M120 470 L-40 120 A372 372 0 0 1 300 40 Z"/></g>
+        <g class="shape s2"><circle class="fill-accent" cx="420" cy="250" r="150"/></g>
+        <g class="shape s3"><path class="fill-paper" d="M560 400 A170 170 0 0 1 900 400 Z"/></g>
+        <g class="shape s4"><path class="fill-accent" d="M760 -20 L1080 -20 L920 260 Z"/></g>
+        <g class="shape s5"><path class="fill-paper" d="M1010 420 L1240 60 A420 420 0 0 1 1460 330 Z"/></g>
+        <g class="shape s6"><circle class="fill-paper" cx="1300" cy="40" r="96"/></g>
+        <g class="shape s7"><path class="stroke-paper" d="M560 400 A230 230 0 0 1 900 210" /></g>
+      </svg>
+    </div>
+
+    <section class="intro" aria-labelledby="hero-title">
+      <div class="wrap intro-copy">
         <h1 id="hero-title">신호를 읽고,<br>판단의 근거를 남기다.</h1>
-        <p class="hero-description">연결된 스캔에서 한 지시를 따라가고,<br>확인한 위치를 라벨로 남기는 작업 공간.</p>
+        <p>위상배열 초음파 검사 데이터를 한 작업 공간에서 연결해 보고, 확인한 신호를 라벨로 남기는 Windows 앱입니다.</p>
       </div>
-      <figure class="hero-figure">
-        <div class="hero-perspective">
+      <figure class="wrap hero-figure">
+        <dl class="readouts" aria-label="이 장면에서 앱 계기줄이 표시한 판독값">
+          <div><dt>위치 P</dt><dd id="read-position">23 / 96</dd></div>
+          <div><dt>법선 L</dt><dd id="read-law">21 / 41</dd></div>
+          <div><dt>시간 S</dt><dd id="read-sample">12.60 µs</dd></div>
+          <div><dt>각도</dt><dd id="read-angle">55.0°</dd></div>
+        </dl>
+        <div class="app-frame">
           <img id="hero-image" src="assets/demo/scan-00.webp" width="1600" height="1000"
-            fetchpriority="high" alt="PAUT AI의 실제 A/B/C/S 연결 스캔 화면. 합성 데모 입력을 사용했습니다.">
+            fetchpriority="high" alt="PAUT AI 2.1.0의 실제 A/B/C/S 연결 스캔 화면. 합성 데모 입력을 사용했습니다.">
         </div>
         <figcaption>
-          <span>실제 앱 렌더링 <span class="caption-divider">/</span> 합성 데모 데이터</span>
-          <button id="hero-play" class="quiet-button" type="button" aria-controls="hero-image" hidden>시연 일시정지</button>
+          <span>실제 앱 렌더링 · 합성 데모 입력 · 판독값은 캡처 때 앱이 표시한 기록입니다.</span>
+          <button id="hero-play" class="text-button" type="button" aria-controls="hero-image" hidden>시연 일시정지</button>
         </figcaption>
       </figure>
-      <div class="hero-bottom">
-        <p>화면만 닮게 그리지 않았습니다.<br>앱의 렌더링과 조작 결과를 그대로 담았습니다.</p>
-        <a class="text-link" href="#product-tour">직접 장면 탐색하기 <span aria-hidden="true">↓</span></a>
-      </div>
     </section>
 
     <section id="product-tour" class="tour-section" aria-labelledby="tour-title">
-      <div class="tour-heading wrap">
-        <p class="eyebrow" lang="en">Inside the workbench</p>
+      <div class="wrap split-heading">
         <h2 id="tour-title">한 신호를 따라,<br>검토의 다음 장면으로.</h2>
-        <p>페이지를 내리면 실제 앱 장면이 이어집니다.<br>버튼과 슬라이더로 원하는 장면을 직접 살펴보세요.</p>
+        <p>페이지를 내리면 실제 앱 장면이 이어집니다. 장면 버튼과 슬라이더로 원하는 화면을 직접 살펴보세요.</p>
       </div>
       <div class="tour-layout wrap">
         <div class="stage-dock">
@@ -72,17 +92,17 @@
             <button type="button" data-scene="volume" aria-pressed="false" aria-controls="stage-image">3D 탐색</button>
           </div>
           <figure class="product-stage" data-scene="scan">
-            <div class="stage-viewport">
+            <div class="app-frame stage-viewport">
               <img id="stage-image" src="assets/demo/scan-00.webp" width="1600" height="1000"
                 decoding="async" alt="실제 앱의 연결 스캔 시연 장면. 합성 데모 입력.">
             </div>
-            <figcaption><span id="stage-caption">연결된 A/B/C/S 화면에서 같은 신호의 위치를 확인합니다.</span><button id="detail-open" class="quiet-button" type="button" hidden>화면 확대</button></figcaption>
+            <figcaption><span id="stage-caption">선택 위치가 바뀌면 A/B/S 화면과 C-scan의 연결 커서, 계기줄 판독값이 함께 갱신됩니다.</span><button id="detail-open" class="text-button" type="button" hidden>화면 확대</button></figcaption>
           </figure>
           <div class="transport" hidden>
             <div class="transport-top">
-              <button id="stage-play" class="transport-play" type="button" aria-controls="stage-image">장면 재생</button>
+              <button id="stage-play" class="solid-button" type="button" aria-controls="stage-image">장면 재생</button>
               <span id="frame-position" class="frame-position" aria-live="off">장면 1</span>
-              <button id="follow-story" class="quiet-button" type="button" aria-pressed="true">스크롤 연동 켜짐</button>
+              <button id="follow-story" class="text-button" type="button" aria-pressed="true">스크롤 연동 켜짐</button>
             </div>
             <label class="range-label" for="frame-slider">시연 장면 탐색</label>
             <input id="frame-slider" type="range" min="0" max="0" value="0" step="1" aria-describedby="playback-note">
@@ -95,99 +115,132 @@
           <article class="story-chapter is-current" data-chapter="scan" aria-labelledby="chapter-scan">
             <span class="chapter-kind">신호 탐색</span>
             <h3 id="chapter-scan">위치를 움직이면,<br>관점도 함께 이어집니다.</h3>
-            <p>A-scan의 파형, B-scan의 단면, C-scan의 분포, S-scan의 각도. 하나의 위치를 각 화면에서 연결해 살펴봅니다.</p>
-            <p class="chapter-detail">시연에서는 실제 앱의 선택 위치가 바뀌며 각 스캔과 커서가 함께 갱신됩니다.</p>
-            <a class="chapter-link" href="#technical">스캔과 좌표의 의미</a>
+            <p>A-scan의 파형, B-scan의 단면, C-scan의 분포, S-scan의 각도를 한 위치로 연결합니다. 맨 위 계기줄은 위치·법선·시간·각도·진폭을 큰 숫자로 보여 줍니다.</p>
+            <p class="chapter-detail">하단 독에서 분석·라벨·검수·데이터셋·AI 모드를 바꾸고, 배치 프리셋과 타일별 축 단위(깊이, 음파 경로, 시간, 샘플)를 고릅니다.</p>
           </article>
           <article class="story-chapter" data-chapter="label" aria-labelledby="chapter-label">
             <span class="chapter-kind">라벨 검토</span>
             <h3 id="chapter-label">관심 영역에서,<br>명시적인 저장까지.</h3>
-            <p>신호를 고르고, 라벨 초안을 살펴보고, 확인한 편집을 저장합니다. 보고 있는 후보와 저장된 라벨은 같은 상태가 아닙니다.</p>
-            <p class="chapter-detail">실제 앱에서 실행한 편집 전·초안·저장 후 장면을 순서대로 확인할 수 있습니다.</p>
-            <span class="story-principle">최종 반영은 사람의 선택으로.</span>
+            <p>신호를 더블클릭하면 6 dB 기준의 초안이 생깁니다. 초안을 확인한 뒤 라벨 추가·저장을 눌러야 파일에 기록됩니다.</p>
+            <p class="chapter-detail">계기줄의 작업 상태 표시가 저장 대기와 저장됨을 구분합니다. 저장한 라벨도 검토 결정 전까지는 미검토입니다.</p>
           </article>
           <article class="story-chapter" data-chapter="volume" aria-labelledby="chapter-volume">
             <span class="chapter-kind">입체 탐색</span>
             <h3 id="chapter-volume">각도를 바꾸면,<br>공간의 맥락이 보입니다.</h3>
-            <p>실제 3D 렌더러의 카메라를 움직여 얻은 장면입니다. 슬라이더로 시점을 바꾸며 신호의 공간적 관계를 살펴보세요.</p>
-            <p class="chapter-detail">Physical, Unfolded, native P/L/S는 좌표 의미가 다릅니다. 3D 표현 자체가 교정된 결함 치수나 인증을 뜻하지 않습니다.</p>
-            <span class="story-principle">평면 이미지를 돌린 연출이 아닌, 실제 렌더링.</span>
+            <p>실제 3D 렌더러의 카메라를 움직여 얻은 장면입니다. 물리, S 적층, P/L/S 표현을 구분해 사용합니다.</p>
+            <p class="chapter-detail">세 표현은 좌표 의미가 다릅니다. 3D 표시는 교정된 결함 치수나 인증을 뜻하지 않습니다.</p>
           </article>
         </div>
       </div>
       <noscript>
         <div class="static-scenes wrap">
           <figure><img src="assets/demo/label-02.webp" width="1600" height="1000" loading="lazy" alt="실제 앱에서 라벨을 저장한 데모 장면"><figcaption>라벨 저장 후 실제 앱 화면 · 합성 데모 입력</figcaption></figure>
-          <figure><img src="assets/demo/volume-00.webp" width="1600" height="1000" loading="lazy" alt="실제 PAUT AI 3D 렌더러의 데모 화면"><figcaption>실제 3D 렌더링 · 합성 데모 입력</figcaption></figure>
+          <figure><img src="assets/demo/volume-03.webp" width="1600" height="1000" loading="lazy" alt="실제 PAUT AI 3D 렌더러의 데모 화면"><figcaption>실제 3D 렌더링 · 합성 데모 입력</figcaption></figure>
         </div>
       </noscript>
     </section>
 
-    <section class="formats-section wrap section-space" aria-labelledby="formats-title">
-      <div class="section-heading">
-        <h2 id="formats-title">데이터 형식은 달라도,<br>검토의 흐름은 하나로.</h2>
-        <p>여러 입력 계열을 같은 작업 공간에서 살펴봅니다. 원본의 취득 좌표와 형식별 의미는 구분해서 유지합니다.</p>
-      </div>
-      <ul class="format-list" aria-label="지원 입력 계열">
-        <li><strong translate="no">NDE</strong><span>검사 데이터</span></li>
-        <li><strong translate="no">UVDATA</strong><span>검사 데이터</span></li>
-        <li><strong translate="no">CIVA</strong><span>프로젝트 디렉터리</span></li>
-        <li><strong translate="no">OPD</strong><span>검사 데이터</span></li>
-        <li><strong translate="no">ODAT</strong><span>검사 데이터</span></li>
+    <section id="principles" class="principles wrap" aria-labelledby="principles-title">
+      <h2 id="principles-title">더 선명한 화면,<br>변하지 않는 원본.</h2>
+      <ul class="card-grid">
+        <li class="card">
+          <svg class="card-glyph" viewBox="0 0 48 48" aria-hidden="true"><rect class="fill-ink" x="4" y="22" width="40" height="4"/><path class="fill-accent" d="M4 22 A20 20 0 0 1 44 22 Z"/></svg>
+          <h3>원본을 보존하는 표시 Gain</h3>
+          <p>Gain과 컬러맵은 화면의 진폭 표현만 바꿉니다. 원본 표본과 측정값은 그대로입니다.</p>
+        </li>
+        <li class="card">
+          <svg class="card-glyph" viewBox="0 0 48 48" aria-hidden="true"><rect class="fill-ink" x="6" y="6" width="36" height="36"/><rect class="fill-paper" x="14" y="14" width="20" height="20"/><circle class="fill-accent" cx="36" cy="36" r="9"/></svg>
+          <h3>사람이 확정하는 라벨</h3>
+          <p>초안, 저장한 라벨, 검토 결정을 서로 다른 상태로 다룹니다. 저장은 항상 명시적인 버튼으로 합니다.</p>
+        </li>
+        <li class="card">
+          <svg class="card-glyph" viewBox="0 0 48 48" aria-hidden="true"><path class="fill-ink" d="M24 4 L44 40 H4 Z"/><circle class="fill-accent" cx="24" cy="30" r="7"/></svg>
+          <h3>선택적인 연구용 AI 보조</h3>
+          <p>후보를 찾고 그 신호로 이동하는 데 씁니다. 별도 모델과 사용 동의가 필요하며 자동 승인은 없습니다.</p>
+        </li>
       </ul>
-      <p class="fine-print">지원 범위는 형식 버전과 취득 메타데이터에 따라 달라집니다. 시연은 별도로 만든 합성 입력을 사용합니다.</p>
     </section>
 
-    <section class="principles wrap section-space" aria-labelledby="principles-title">
-      <h2 id="principles-title">더 선명한 화면.<br>변하지 않는 원본.</h2>
-      <div class="principle-copy">
-        <p class="large-copy">표시 Gain은 화면의 진폭 표현을 바꾸고,<br>원본 신호와 측정값은 그대로 유지합니다.</p>
-        <p>한 검사 파일의 여러 라벨을 확인하고, 변경한 초안과 저장한 결과를 구분합니다. 후보 탐색부터 명시적인 반영까지 판단의 경계를 놓치지 않습니다.</p>
-        <div class="research-note">
-          <h3>연구용 AI 보조</h3>
-          <p>선택적인 후보 탐색 기능입니다. 별도 모델·런타임과 사용 동의가 필요하며, 결과는 사람이 검증합니다. 자동 합격 판정이나 라벨 자동 승인을 의미하지 않습니다.</p>
+    <section class="themes-split wrap" aria-labelledby="themes-title">
+      <div class="split-copy">
+        <h2 id="themes-title">밝은 곳에서도,<br>어두운 곳에서도.</h2>
+        <p>같은 작업 공간을 Light와 Dark로 씁니다. 선택한 상태는 Dark에서 연두색으로, Light에서 진한 잉크색으로 표시됩니다.</p>
+        <p class="fine-print">두 그림은 같은 저장 장면을 앱이 두 테마로 렌더링한 것입니다.</p>
+      </div>
+      <figure class="theme-pair">
+        <img class="theme-light" src="assets/demo/theme-light.webp" width="1600" height="1000" loading="lazy" alt="Light 테마의 PAUT AI 라벨 저장 장면">
+        <img class="theme-dark" src="assets/demo/theme-dark.webp" width="1600" height="1000" loading="lazy" alt="Dark 테마의 PAUT AI 라벨 저장 장면">
+      </figure>
+    </section>
+
+    <section class="formats wrap" aria-labelledby="formats-title">
+      <h2 id="formats-title">데이터 형식은 달라도,<br>검토의 흐름은 하나로.</h2>
+      <div>
+        <ul class="format-list" aria-label="지원 입력 계열">
+          <li><strong translate="no">NDE</strong><span>검사 데이터</span></li>
+          <li><strong translate="no">UVDATA</strong><span>검사 데이터</span></li>
+          <li><strong translate="no">CIVA</strong><span>프로젝트 디렉터리</span></li>
+          <li><strong translate="no">OPD</strong><span>검사 데이터</span></li>
+          <li><strong translate="no">ODAT</strong><span>검사 데이터</span></li>
+        </ul>
+        <p class="fine-print">지원 범위는 형식 버전과 취득 메타데이터에 따라 달라집니다. 시연은 별도로 만든 합성 입력을 사용합니다.</p>
+      </div>
+    </section>
+
+    <section class="statement-band" aria-label="작업 원칙">
+      <div class="wrap statement-grid">
+        <figure><blockquote>표시 Gain은 화면만 바꿉니다. 원본 신호는 그대로 남습니다.</blockquote><figcaption>원본 보존</figcaption></figure>
+        <figure><blockquote>AI 후보와 초안은 사람이 확인하고 저장하기 전까지 라벨이 아닙니다.</blockquote><figcaption>사람의 결정</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="faq" class="faq wrap" aria-labelledby="faq-title">
+      <h2 id="faq-title">자주 묻는 질문</h2>
+      <div class="disclosures">
+        <details>
+          <summary>이 화면은 실제 앱인가요?</summary>
+          <p>네. PAUT AI 2.1.0의 실제 Windows 앱 코드가 렌더링한 화면입니다. 공개용 합성 데모 입력을 사용했으며 현장 검사나 고객 데이터는 아닙니다. 생성형 이미지로 앱 화면을 그린 것이 아닙니다.</p>
+        </details>
+        <details>
+          <summary>웹에서 앱을 실행하는 건가요?</summary>
+          <p>아닙니다. 이 페이지는 실제 앱에서 만든 장면을 탐색하는 제품 시연입니다. 슬라이더는 캡처된 장면을 고릅니다. 분석, 라벨 저장, 3D 계산은 Windows 앱에서 수행했으며 브라우저에서 다시 실행되지 않습니다.</p>
+        </details>
+        <details>
+          <summary>스캔과 3D 좌표는 어떻게 다른가요?</summary>
+          <p>연결된 A/B/C/S 스캔은 같은 취득 위치를 여러 관점으로 보여 줍니다. 물리 표현은 기하와 반사 경로를, S 적층은 섹터를 쌓은 공간을, P/L/S는 취득 인덱스 공간을 씁니다. 서로 같은 XYZ 좌표나 교정된 치수로 해석하면 안 됩니다.</p>
+        </details>
+        <details>
+          <summary>설치 파일과 AI 모델도 제공하나요?</summary>
+          <p>공개 저장소에는 제품 소개 자료만 있습니다. 앱 소스는 비공개이며 설치 프로그램과 모델 가중치는 포함하지 않습니다. 연구용 AI 사용에는 별도 모델·실행 환경과 검사자의 검증이 필요합니다.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="contribute-band" aria-labelledby="closing-title">
+      <div class="wrap split-heading">
+        <h2 id="closing-title">신호의 맥락부터,<br>검토의 기록까지.</h2>
+        <div>
+          <p>제품 소개 자료와 기술 범위 안내는 공개 저장소에서 볼 수 있습니다.</p>
+          <a class="solid-button" href="https://github.com/hyunjjun07/paut-ai-showcase">공개 소개 저장소 보기</a>
         </div>
       </div>
     </section>
-
-    <section id="technical" class="technical wrap section-space" aria-labelledby="technical-title">
-      <div><h2 id="technical-title">실제 화면,<br>명확한 사용 범위.</h2><p>제품 시연을 이해하기 위한 안내입니다.</p></div>
-      <div class="disclosures">
-        <details>
-          <summary>이 화면은 실제 앱인가요?<span aria-hidden="true">+</span></summary>
-          <p>네. PAUT AI의 실제 Windows 앱 코드가 렌더링한 화면입니다. 공개용 합성 데모 입력을 사용했으며, 현장 검사나 고객 데이터는 아닙니다. 생성형 이미지로 앱 화면을 그린 것이 아닙니다.</p>
-        </details>
-        <details>
-          <summary>웹에서 앱을 실행하는 건가요?<span aria-hidden="true">+</span></summary>
-          <p>이 페이지는 실제 앱에서 만든 장면을 탐색하는 인터랙티브 제품 시연입니다. 슬라이더는 캡처된 장면을 선택합니다. 원본 분석·라벨 저장·3D 계산은 Windows 앱에서 수행되었으며 브라우저에서 새로 실행되지 않습니다.</p>
-        </details>
-        <details>
-          <summary>스캔과 3D 좌표는 어떻게 다른가요?<span aria-hidden="true">+</span></summary>
-          <p>연결된 A/B/C/S 스캔은 같은 취득 위치를 여러 관점으로 보여줍니다. Physical은 기하와 반사 경로를 사용하는 표현, Unfolded는 전개 공간, native P/L/S는 취득 인덱스 공간입니다. 서로 같은 XYZ 좌표나 교정된 치수로 해석하면 안 됩니다.</p>
-        </details>
-        <details>
-          <summary>설치 파일과 AI 모델도 제공하나요?<span aria-hidden="true">+</span></summary>
-          <p>이 공개 저장소에는 제품 소개 자료만 있습니다. 앱 소스는 비공개이며 설치 프로그램과 모델 가중치는 포함하지 않습니다. 연구용 AI 사용에는 별도 모델·실행 환경과 검사자의 검증이 필요합니다.</p>
-        </details>
-      </div>
-    </section>
-    <section class="closing wrap">
-      <h2>신호의 맥락부터,<br>검토의 기록까지.</h2>
-      <a class="button-link" href="https://github.com/hyunjjun07/paut-ai-showcase">공개 소개 자료 보기 <span aria-hidden="true">↗</span></a>
-    </section>
   </main>
+
   <dialog id="detail-view" aria-labelledby="detail-title">
     <div class="detail-heading">
       <h2 id="detail-title">실제 앱 화면 자세히 보기</h2>
-      <button id="detail-close" class="transport-play" type="button">닫기</button>
+      <button id="detail-close" class="solid-button" type="button">닫기</button>
     </div>
     <p>합성 데모 입력을 사용한 실제 렌더링입니다. 작은 화면에서는 좌우로 움직여 상세 영역을 확인하세요.</p>
     <div class="detail-scroll" tabindex="0" aria-label="확대된 앱 화면. 방향키로 이동할 수 있습니다."><img id="detail-image" width="1600" height="1000" alt=""></div>
   </dialog>
-  <footer class="site-footer wrap">
-    <a class="wordmark" href="./" translate="no">PAUT AI</a>
-    <p>Windows 검사 시각화 · 라벨링 · 연구용 AI 보조</p>
-    <a href="https://github.com/hyunjjun07/paut-ai-showcase/blob/main/TECHNICAL.md">기술 범위와 FAQ</a>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <span translate="no">PAUT AI · Windows 검사 시각화 · 라벨링 · 연구용 AI 보조</span>
+      <nav aria-label="바닥글"><a href="https://github.com/hyunjjun07/paut-ai-showcase/blob/main/TECHNICAL.md">기술 범위</a><a href="https://github.com/hyunjjun07/paut-ai-showcase">공개 저장소</a></nav>
+    </div>
   </footer>
 </body>
 </html>
